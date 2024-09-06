@@ -15,12 +15,10 @@ This repository contains the code for a personal portfolio website. It includes 
 ## Features
 
 - Personal Description
-- Experience Showcase
 - Project Showcase
 - Education Background
 - Skills Section
 - Hobbies Section
-- Dark Mode Toggle
 - Social Media Links
 
 ## Installation

@@ -15,48 +15,6 @@ body {
   padding-top: 20px;
 }
 
-/* Dark Mode Styles */
-.dark-mode {
-  background-color: #1e1e1e;
-  color: #d4d4d4;
-}
-
-.dark-mode a {
-  color: #4da1ff;
-}
-
-.dark-mode .container {
-  border-color: #333;
-}
-
-.dark-mode .personal,
-.dark-mode .project,
-.dark-mode .edu,
-.dark-mode .hobbies {
-  background-color: #2e2e2e;
-  border-color: #444;
-}
-
-.dark-mode .button-link {
-  color: #fff;
-}
-
-.dark-mode .button-link.linkedin {
-  background-color: #0077b5;
-}
-.dark-mode .button-link.instagram {
-  background-color: #e1306c;
-}
-.dark-mode .button-link.twitter {
-  background-color: #1da1f2;
-}
-.dark-mode .button-link.medium {
-  background-color: #00ab6c;
-}
-.dark-mode .button-link.youtube {
-  background-color: #ff0000;
-}
-
 /* Container Styles */
 .container {
   background-color: #fff;
@@ -141,23 +99,6 @@ a {
 .button-link:hover {
   opacity: 0.9;
   transform: scale(1.05);
-}
-
-/* Toggle Button Styles */
-.button-toggle {
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.button-toggle:hover {
-  background-color: #0056b3;
 }
 
 /* Social Media Buttons */
