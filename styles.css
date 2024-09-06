@@ -1,63 +1,116 @@
 html,
 body {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: #000000;
-  color: #333;
+  padding-top: 20px;
 }
 
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.dark-mode a {
+  color: #4da1ff;
+}
+
+.dark-mode .container {
+  border-color: #333;
+}
+
+.dark-mode .personal,
+.dark-mode .project,
+.dark-mode .edu,
+.dark-mode .hobbies {
+  background-color: #2e2e2e;
+  border-color: #444;
+}
+
+.dark-mode .button-link {
+  color: #fff;
+}
+
+.dark-mode .button-link.linkedin {
+  background-color: #0077b5;
+}
+.dark-mode .button-link.instagram {
+  background-color: #e1306c;
+}
+.dark-mode .button-link.twitter {
+  background-color: #1da1f2;
+}
+.dark-mode .button-link.medium {
+  background-color: #00ab6c;
+}
+.dark-mode .button-link.youtube {
+  background-color: #ff0000;
+}
+
+/* Container Styles */
 .container {
   background-color: #fff;
-  border: 2px solid #333;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 800px;
-  padding: 25px;
+  max-width: 900px;
+  padding: 30px;
   box-sizing: border-box;
   margin: 20px;
 }
 
+/* Header Styles */
 header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.5em;
+  color: #333;
 }
 
 .image {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .image img {
-  border-radius: 10px;
+  border-radius: 8px;
   width: 150px;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Main Content Styles */
 main {
   padding: 20px 0;
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 h2 {
   border-bottom: 2px solid #333;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  color: #333;
 }
 
 p {
@@ -65,71 +118,217 @@ p {
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.button-link {
-  display: inline-block;
-  background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
-  text-align: center;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
 }
 
-.button-link i {
-  font-size: 20px;
-  margin-right: 8px;
+/* Button Styles */
+.button-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  min-width: 150px;
 }
 
 .button-link:hover {
-  background-color: #0056b3;
+  opacity: 0.9;
+  transform: scale(1.05);
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  background: #e2e2e2;
-  margin: 5px 0;
-  padding: 10px;
+/* Toggle Button Styles */
+.button-toggle {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
   font-weight: bold;
 }
 
+.button-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* Social Media Buttons */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 12px 20px;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-buttons i {
+  margin-right: 8px; /* Jarak antara ikon dan teks */
+  font-size: 20px;
+}
+
+.button-link.linkedin {
+  background-color: #0077b5;
+}
+
+.button-link.instagram {
+  background-color: #e1306c;
+}
+
+.button-link.twitter {
+  background-color: #1da1f2;
+}
+
+.button-link.medium {
+  background-color: #00ab6c;
+}
+
+.button-link.youtube {
+  background-color: #ff0000;
+}
+
+.button-link.load-more {
+  background-color: #000000;
+}
+
+/* Project & Education Styles */
+.personal,
+.project,
+.edu,
+.hobbies,
+.skills {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.project h3,
+.edu h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.project .dates,
+.edu .dates {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.project .description,
+.edu .description,
+.edu .degree {
+  margin-bottom: 10px;
+}
+
+/* Hobbies Section */
+.hobby-grid .hobbies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.hobby-grid .hobbies ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.hobby-grid .hobbies li {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies li {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Skills Section */
+.skills-grid .skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.skills-grid .skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.skills-grid .skills li {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills li {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}
+
 /* Media Queries */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
-    width: 100%;
-    padding: 10px;
+    padding: 20px;
   }
 
   header h1 {
-    font-size: 1.5em;
-  }
-
-  .image img {
-    width: 120px;
-    height: 160px;
+    font-size: 2em;
   }
 
   .button-link {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+
+  .button-toggle {
     padding: 8px 16px;
-    font-size: 0.9em;
   }
 
-  section h2 {
-    font-size: 1.2em;
+  h2 {
+    font-size: 1.5em;
   }
 
-  p,
-  ul li {
-    font-size: 0.9em;
+  .hobbies .hobby-grid .skills .hobby-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills .hobby-grid {
+    flex-direction: column;
+    align-items: center;
   }
 }
