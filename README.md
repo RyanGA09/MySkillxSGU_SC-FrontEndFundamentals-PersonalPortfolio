@@ -25,15 +25,15 @@ This repository contains the code for a personal portfolio website. It includes 
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/your-repository.git
-```
+   ```bash
+   git clone https://github.com/yourusername/your-repository.git
+   ```
 
 2. Navigate to the project directory:
 
-```bash
-cd your-repository
-```
+   ```bash
+   cd your-repository
+   ```
 
 3. Open index.html in your web browser to view the portfolio
 
@@ -49,29 +49,95 @@ Feel free to fork the repository and submit pull requests for improvements or bu
 
 Important: When contributing, please create a new branch for your changes instead of pushing directly to the main branch. To do this:
 
-Create a new branch:
+1. With Forking:
 
-```bash
-git checkout -b your-feature-branch
-```
+   1. Fork Repository
+      On the project page you want to contribute to, click the "Fork" button in the upper right corner. This will create a copy of the repository in your GitHub account.
+   2. Clone Forked Repository
+      After forking, open your terminal and run the following command to clone the forked repository to your local machine:
 
-Make your changes and commit them:
+      ```bash
+      git clone https://github.com/your-username/SimpleDesignUploadCRUD.git
+      ```
 
-```bash
-git add .
-```
+   3. Navigate to the Project Directory
+      Change to the project directory with the command:
 
-```bash
-git commit -m "Add a descriptive message about your changes"
-```
+      ```bash
+      cd SimpleDesignUploadCRUD
+      ```
 
-Push the branch to your forked repository:
+   4. Create a new branch
+      Create a new branch for the feature or bug fix you want to add:
 
-```bash
-git push -u origin your-feature-branch
-```
+      ```bash
+      git checkout -b your-feature-branch
+      ```
 
-Open a pull request from your branch to the main branch of the original repository.
+   5. Make your changes and commit them
+      Make the necessary changes in the code. After that, add the changes to the staging area and commit:
+
+      ```bash
+      git add .
+      ```
+
+      ```bash
+      git commit -m "Add a descriptive message about your changes"
+      ```
+
+   6. Push the branch to your forked repository
+      After committing, push the new branch to your forked repository on GitHub:
+
+      ```bash
+      git push -u origin your-feature-branch
+      ```
+
+   7. Open a pull request from your branch to the main branch of the original repository.
+
+   - Go to the original repository (the one you forked) on GitHub.
+   - Click the "Pull Requests" tab and then click "New Pull Request".
+   - Select your branch from your fork as the source (base) and the main branch from the original repository as the target (compare).
+   - Provide a suitable description and submit the pull request.
+
+2. Without Forking
+
+   1. Create a new branch
+      Create a new branch for the feature or bug fix you want to add:
+
+      ```bash
+      git checkout -b your-feature-branch
+      ```
+
+   2. Make your changes and commit them
+      Make the necessary changes in the code. After that, add the changes to the staging area and commit:
+
+      ```bash
+      git add .
+      ```
+
+      ```bash
+      git commit -m "Add a descriptive message about your changes"
+      ```
+
+   3. Push the branch to your branch at the repository
+      Push the new branch to the repository:
+
+      ```bash
+      git push -u origin your-feature-branch
+      ```
+
+   <!-- 4. Merge changes back to the main branch:
+      If you have write access to the main repository, you can merge your changes back to the main branch:
+      ```bash
+      git checkout main
+      git merge your-feature-branch
+      ```
+
+   4. (Optional) Delete the branch after merging:
+      After merging, you can delete the feature branch to keep the repository clean:
+      ```bash
+      git branch -d your-feature-branch
+      ``` -->
 
 **_By following these guidelines, you help maintain a clean and manageable project history._**
 
