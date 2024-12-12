@@ -1,4 +1,4 @@
-# MySkill_ShortClass - Basic Personal Portfolio
+# MySkill x SGU_Shortclass - FrontEnd Fundamentals - Personal Portfolio
 
 A simple personal portfolio website designed to showcase your experiences, projects, skills, hobbies and contact information. The website features a modern design with support for dark mode, responsive layout, and social media integration.
 
@@ -20,13 +20,13 @@ This repository contains the code for a personal portfolio website. It includes 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/RyanGA09/SimplePersonalPortfolio.git
+   git clone https://github.com/RyanGA09/MySkillxSGU_SC-FrontEndFundamentals-PersonalPortfolio.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd SimplePersonalPortfolio
+   cd MySkillxSGU_SC-FrontEndFundamentals-PersonalPortfolio
    ```
 
 3. Open the code using your own IDE (example: Visual Studio Code)
