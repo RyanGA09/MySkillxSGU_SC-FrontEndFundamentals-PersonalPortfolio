@@ -165,15 +165,15 @@ Feel free to fork the repository and submit pull requests for improvements or bu
 
 **_By following these guidelines, you help maintain a clean and manageable project history._**
 
+## Note
+
+**Contributing Section**: Added instructions to create a new branch for changes instead of pushing directly to the `main` branch, to maintain a clean project history.
+
 ## Contact
 
 For any questions or feedback, you can reach out to me via:
 
 - [Linkedin](https://www.linkedin.com/in/ryan-gading-abdullah/)
-
-## Note
-
-**Contributing Section**: Added instructions to create a new branch for changes instead of pushing directly to the `main` branch, to maintain a clean project history.
 
 ## License
 
