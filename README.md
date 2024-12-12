@@ -4,16 +4,16 @@ A simple personal portfolio website designed to showcase your experiences, proje
 
 ## Description
 
-This repository contains the code for a personal portfolio website. It includes sections for displaying personal information, experiences, projects, education, skills, and hobbies. The portfolio is designed to be responsive and includes both light and dark modes.
+This repository contains the code for a personal portfolio website created as part of the **MySkill x SGU Shortclass - FrontEnd Fundamentals** course. The portfolio website showcases your personal information, experiences, projects, education, skills, and hobbies. It is designed to be responsive, with both light and dark modes available.
 
 ## Features
 
-- Personal Description
-- Project Showcase
-- Education Background
+- Personal Description Section
+- Project Showcase Section
+- Education Background Section
 - Skills Section
 - Hobbies Section
-- Social Media Links
+- Social Media Links Section
 
 ## Installation
 
@@ -29,9 +29,9 @@ This repository contains the code for a personal portfolio website. It includes 
    cd MySkillxSGU_SC-FrontEndFundamentals-PersonalPortfolio
    ```
 
-3. Open the code using your own IDE (example: Visual Studio Code)
+3. Open the project in your preferred IDE (e.g., Visual Studio Code).
 
-4. Open `index.html` in your web browser to view the portfolio
+4. Open `index.html` file in your web browser to view the portfolio.
 
 ## Usage
 
@@ -53,14 +53,14 @@ Important: When contributing, please create a new branch for your changes instea
       After forking, open your terminal and run the following command to clone the forked repository to your local machine:
 
       ```bash
-      git clone https://github.com/your-username/SimpleDesignUploadCRUD.git
+      git clone https://github.com/your-username/MySkillxSGU_SC-FrontEndFundamentals-PersonalPortfolio.git
       ```
 
    3. Navigate to the Project Directory
       Change to the project directory with the command:
 
       ```bash
-      cd SimpleDesignUploadCRUD
+      cd MySkillxSGU_SC-FrontEndFundamentals-PersonalPortfolio
       ```
 
    4. Create a new branch
