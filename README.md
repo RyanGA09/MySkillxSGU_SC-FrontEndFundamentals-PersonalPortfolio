@@ -1,4 +1,4 @@
-# Basic Personal Portfolio
+# MySkill_ShortClass - Basic Personal Portfolio
 
 A simple personal portfolio website designed to showcase your experiences, projects, skills, hobbies and contact information. The website features a modern design with support for dark mode, responsive layout, and social media integration.
 
