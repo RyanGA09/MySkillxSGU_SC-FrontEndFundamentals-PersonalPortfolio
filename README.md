@@ -2,12 +2,6 @@
 
 A simple personal portfolio website designed to showcase your experiences, projects, skills, hobbies and contact information. The website features a modern design with support for dark mode, responsive layout, and social media integration.
 
-## License
-
-&copy; 2024 Ryan Gading Abdullah. All rights reserved.
-
-[MIT License](LICENSE)
-
 ## Description
 
 This repository contains the code for a personal portfolio website. It includes sections for displaying personal information, experiences, projects, education, skills, and hobbies. The portfolio is designed to be responsive and includes both light and dark modes.
@@ -26,22 +20,24 @@ This repository contains the code for a personal portfolio website. It includes 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/RyanGA09/SimplePersonalPortfolio.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd your-repository
+   cd SimplePersonalPortfolio
    ```
 
-3. Open index.html in your web browser to view the portfolio
+3. Open the code using your own IDE (example: Visual Studio Code)
+
+4. Open `index.html` in your web browser to view the portfolio
 
 ## Usage
 
-- Modify the index.html file to update your personal information and projects.
-- Customize the styles in styles.css to fit your preferences.
-- Add or update functionality in scripts.js as needed.
+- Modify the `index.html` file to update your personal information and projects.
+- Customize the styles in `styles.css` to fit your preferences.
+- Add or update functionality in `scripts.js` as needed.
 
 ## Contributing
 
@@ -126,33 +122,20 @@ Important: When contributing, please create a new branch for your changes instea
       git push -u origin your-feature-branch
       ```
 
-   <!-- 4. Merge changes back to the main branch:
-      If you have write access to the main repository, you can merge your changes back to the main branch:
-      ```bash
-      git checkout main
-      git merge your-feature-branch
-      ```
-
-   4. (Optional) Delete the branch after merging:
-      After merging, you can delete the feature branch to keep the repository clean:
-      ```bash
-      git branch -d your-feature-branch
-      ``` -->
-
 **_By following these guidelines, you help maintain a clean and manageable project history._**
 
 ## Contact
 
 For any questions or feedback, you can reach out to me via:
 
-- [Gmail](mailto:ryanrga01@gmail)
 - [Linkedin](https://www.linkedin.com/in/ryan-gading-abdullah/)
-
-## Support Me
-
-- [Saweria](mailto:ryanrga01@gmail)
-- [Sociabuzz](https://www.linkedin.com/in/ryan-gading-abdullah/)
 
 ## Note
 
 **Contributing Section**: Added instructions to create a new branch for changes instead of pushing directly to the `main` branch, to maintain a clean project history.
+
+## License
+
+&copy; 2024 Ryan Gading Abdullah. All rights reserved.
+
+[MIT License](LICENSE)
