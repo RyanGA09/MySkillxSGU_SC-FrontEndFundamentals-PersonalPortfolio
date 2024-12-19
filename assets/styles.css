@@ -101,6 +101,22 @@ a {
   transform: scale(1.05);
 }
 
+/* Download PDF Button Style */
+.button-link.download-pdf {
+  background-color: #4caf50; /* Green for download */
+  margin-top: 20px; /* Spacing between image and download button */
+}
+
+/* Hover effect for download PDF button */
+.button-link.download-pdf:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+.button-link i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
 /* Social Media Buttons */
 .social-buttons {
   display: flex;
