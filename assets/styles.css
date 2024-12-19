@@ -138,6 +138,42 @@ a {
   background-color: #ff0000;
 }
 
+/* Social Media Buttons */
+.button-link.facebook {
+  background-color: #1877f2; /* Biru khas Facebook */
+}
+
+/* Hover Effects for all buttons */
+.button-link:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Hover effects for each social media button */
+.button-link.linkedin:hover {
+  background-color: #0a0187; /* Gelap untuk LinkedIn */
+}
+
+.button-link.instagram:hover {
+  background-color: #b335c1; /* Gelap untuk Instagram */
+}
+
+.button-link.twitter:hover {
+  background-color: #13b9b4; /* Gelap untuk Twitter */
+}
+
+.button-link.medium:hover {
+  background-color: #18b300; /* Gelap untuk Medium */
+}
+
+.button-link.youtube:hover {
+  background-color: #e63a00; /* Gelap untuk YouTube */
+}
+
+.button-link.facebook:hover {
+  background-color: #145dbf; /* Gelap untuk Facebook */
+}
+
 .button-link.load-more {
   background-color: #000000;
 }
