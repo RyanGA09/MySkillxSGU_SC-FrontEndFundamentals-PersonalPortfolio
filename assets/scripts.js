@@ -14,10 +14,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function downloadPDF() {
-  const link = document.createElement("a");
-  link.href = "assets/My_Resume.pdf"; // Pastikan path ini benar
-  link.download = "My_Resume.pdf"; // Nama file yang akan diunduh
-  document.body.appendChild(link); // Menambahkan link ke body (tidak terlihat)
-  link.click(); // Memicu klik pada link untuk unduh
-  document.body.removeChild(link); // Menghapus link setelah diklik
+  const element = document.querySelector(".container");
+
+  // Debugging: Cek apakah elemen ditemukan
+  console.log("Elemen ditemukan: ", element);
+
+  if (element) {
+    const options = {
+      margin: 1,
+      filename: "My_Resume.pdf", // Nama file PDF yang akan diunduh
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 4, logging: true, dpi: 192, letterRendering: true },
+      jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+    };
+
+    // Menggunakan html2pdf untuk mengonversi elemen ke PDF
+    html2pdf().from(element).set(options).save();
+  } else {
+    console.log("Elemen .container tidak ditemukan.");
+  }
 }
