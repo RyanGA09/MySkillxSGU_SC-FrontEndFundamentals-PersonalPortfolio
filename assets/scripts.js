@@ -1,4 +1,3 @@
-// Flag untuk menghindari klik ganda
 let isDownloading = false;
 
 // Event listener untuk memastikan DOM sudah sepenuhnya dimuat
@@ -36,24 +35,36 @@ function downloadPDF() {
   // Pastikan elemen ditemukan sebelum mengonversi
   if (element) {
     const options = {
-      margin: 1,
+      margin: 0.5, // Menambahkan margin yang lebih besar
       filename: "My_Resume.pdf", // Nama file PDF yang akan diunduh
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 4, logging: true, dpi: 192, letterRendering: true },
-      jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+      image: { type: "jpeg", quality: 0.98 }, // Pengaturan kualitas gambar
+      html2canvas: { scale: 4, logging: true, dpi: 192, letterRendering: true }, // Pengaturan canvas untuk rendering lebih baik
+      jsPDF: { unit: "in", format: "a4", orientation: "portrait" }, // Format A4, orientasi portrait
     };
 
     // Menggunakan html2pdf untuk mengonversi elemen ke PDF
-    html2pdf().from(element).set(options).save();
-
-    // Menampilkan tombol kembali setelah proses selesai
-    setTimeout(() => {
-      if (downloadButton) {
-        downloadButton.style.display = "block"; // Menampilkan kembali tombol download
-      }
-      // Menandai bahwa unduhan selesai
-      isDownloading = false;
-    }, 2000); // Menunggu beberapa detik sebelum menampilkan kembali tombol
+    html2pdf()
+      .from(element)
+      .set(options)
+      .save()
+      .then(function () {
+        // Menampilkan tombol kembali setelah proses selesai
+        setTimeout(() => {
+          if (downloadButton) {
+            downloadButton.style.display = "block"; // Menampilkan kembali tombol download
+          }
+          // Menandai bahwa unduhan selesai
+          isDownloading = false;
+        }, 1000); // Tunggu sebentar untuk memastikan PDF selesai sebelum menampilkan tombol kembali
+      })
+      .catch(function (error) {
+        console.log("Terjadi kesalahan dalam mengonversi ke PDF:", error);
+        // Menandai bahwa unduhan selesai meskipun ada kesalahan
+        isDownloading = false;
+        if (downloadButton) {
+          downloadButton.style.display = "block"; // Menampilkan kembali tombol jika ada error
+        }
+      });
   } else {
     console.log("Elemen .container tidak ditemukan.");
     // Menghentikan status unduhan jika terjadi error
