@@ -1,11 +1,14 @@
-// Event listener for DOMContentLoaded to ensure the DOM is fully loaded
+// Flag untuk menghindari klik ganda
+let isDownloading = false;
+
+// Event listener untuk memastikan DOM sudah sepenuhnya dimuat
 document.addEventListener("DOMContentLoaded", function () {
   const downloadButton = document.querySelector(".download-pdf");
 
-  // Debugging: Check if the element exists in the DOM
+  // Debugging: Periksa jika tombol ditemukan di DOM
   console.log("Download Button: ", downloadButton);
 
-  // Ensure the button exists before adding event listener
+  // Pastikan tombol ada sebelum menambahkan event listener
   if (downloadButton) {
     downloadButton.addEventListener("click", downloadPDF);
   } else {
@@ -14,11 +17,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function downloadPDF() {
+  // Jika sudah dalam proses unduh, hentikan
+  if (isDownloading) {
+    return;
+  }
+
+  // Menandai bahwa unduhan sedang berlangsung
+  isDownloading = true;
+
   const element = document.querySelector(".container");
 
-  // Debugging: Cek apakah elemen ditemukan
-  console.log("Elemen ditemukan: ", element);
+  // Menyembunyikan tombol download selama proses pengunduhan
+  const downloadButton = document.querySelector(".download-pdf");
+  if (downloadButton) {
+    downloadButton.style.display = "none";
+  }
 
+  // Pastikan elemen ditemukan sebelum mengonversi
   if (element) {
     const options = {
       margin: 1,
@@ -30,7 +45,18 @@ function downloadPDF() {
 
     // Menggunakan html2pdf untuk mengonversi elemen ke PDF
     html2pdf().from(element).set(options).save();
+
+    // Menampilkan tombol kembali setelah proses selesai
+    setTimeout(() => {
+      if (downloadButton) {
+        downloadButton.style.display = "block"; // Menampilkan kembali tombol download
+      }
+      // Menandai bahwa unduhan selesai
+      isDownloading = false;
+    }, 2000); // Menunggu beberapa detik sebelum menampilkan kembali tombol
   } else {
     console.log("Elemen .container tidak ditemukan.");
+    // Menghentikan status unduhan jika terjadi error
+    isDownloading = false;
   }
 }
