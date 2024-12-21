@@ -179,4 +179,4 @@ For any questions or feedback, you can reach out to me via:
 
 &copy; 2024 Ryan Gading Abdullah. All rights reserved.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [MIT LICENSE](LICENSE) for details.
